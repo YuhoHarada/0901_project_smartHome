@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 3005
 
-app.listen(3002, () => {
-    console.log(`server listening at http://localhost:3000`)
+app.listen(PORT, () => {
+    console.log(`server listening`)
 })
 
 app.use(express.static('public'))
